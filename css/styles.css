@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+
+:root {
+  --ff: "Overpass", sans-serif;
+  --Orange: hsl(25, 97%, 53%);
+  --White: hsl(0, 0%, 100%);
+  --LightGrey: hsl(217, 12%, 63%);
+  --MediumGrey: hsl(216, 10%, 28%);
+  --DarkBlue: hsl(213, 19%, 18%);
+  --VeryDarkBlue: hsl(216, 12%, 8%);
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: var(--ff);
+  background-color: var(--VeryDarkBlue);
+  color: var(--LightGrey);
+  height: 100vh;
+}
+main {
+  background-color: var(--DarkBlue);
+  margin: auto 1.5rem;
+  padding: 1.5rem;
+  border-radius: 10px;
+  max-width: 410px;
+}
+.icon-container {
+  background-color: var(--MediumGrey);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: relative;
+  margin-bottom: 1rem;
+}
+.icon-star {
+  position: absolute;
+  top: 28%;
+  left: 30%;
+}
+h1 {
+  color: white;
+  margin-bottom: 1rem;
+  font-size: 26px;
+}
+p {
+  margin-bottom: 1rem;
+  font-size: 14px;
+}
+.rating-box {
+  margin: 2rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.rating-box > span {
+  background-color: var(--MediumGrey);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.rating-box > span:hover {
+  background-color: var(--Orange);
+  color: white;
+}
+.submit-feedback {
+  width: 100%;
+  color: white;
+  background-color: var(--Orange);
+  height: 2.8rem;
+  border-radius: 2rem;
+}
+.submit-feedback:hover {
+  background-color: white;
+  color: var(--Orange);
+}
+
+.thanks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+.thankyou-img-container {
+  padding: 0.6rem;
+}
+.selected-rating {
+  font-size: 14px;
+  color: var(--Orange);
+  background-color: var(--MediumGrey);
+  padding: 0.4rem 0.8rem;
+  border-radius: 1rem;
+}
+.thank-you {
+  margin: 1rem 0;
+}
+.thank-you-para {
+  text-align: center;
+}
