@@ -69,6 +69,7 @@ p {
   color: white;
 }
 .submit-feedback {
+  cursor: pointer;
   width: 100%;
   color: white;
   background-color: var(--Orange);
